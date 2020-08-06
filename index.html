@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+<a href="javascript:WebSocketTest()">链接</a>
+
+
+
+</body>
+<script type="text/javascript" src="socks.js"></script>
+<script>
+   
+
+   function DealRecData(r){
+    console.log("web copy that:",r.data)
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.font="30px Arial";
+    ctx.strokeText(r.data,10,50);
+    
+}
+   </script>
+</html>
