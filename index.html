@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head> 
-
+  
+  <head> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>菜鸟教程(runoob.com)</title> 
-</head>
-<body>
+    <title>IT资产管理平台</title></head>
+  
+  <body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">添加</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">添加</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <h4>地理位置</h4>
+                <!--添加的项目类别-->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                  <label class="form-check-label" for="exampleRadios1">杭州</label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">宁波</label></div>
+              </div>
+              <div class="form-group">
+                <h4>类别</h4>
+                <!--添加的项目类别-->
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">服务器</label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">项目</label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios3">依赖服务</label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios3">硬件</label></div>
+              </div>
+              <h4>服务器</h4>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">主机名</label>
+                <input type="text" class="form-control" id="recipient-name"></div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">描述</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">提交</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="socks.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-您的浏览器不支持 HTML5 canvas 标签。</canvas>
-<a href="javascript:WebSocketTest()">链接</a>
-
-
-
-</body>
-
-<script type="text/javascript" src="socks.js"></script>
-<script type="text/javascript" src="main.js"></script>
 </html>

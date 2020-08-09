@@ -8,4 +8,4 @@
 # 更新情况
 - 2020.08.06 空
 - 2020.08.07 支持websockts
-- 2020.08.10 websocket函数化调用
+- 2020.08.10 websocket函数化调用和支持bootstarp4.5
