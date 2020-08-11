@@ -53,16 +53,10 @@
 					</div>
 
 					<div class="form-group col-auto my-1">
-						<label for="server-state" class="col-form-label" for="server-state">运行状态</label>
-						<select class="custom-select" id="server-state">
-							<option selected>请选择</option>
-							<option value="1">在线</option>
-							<option value="2">空闲</option>
-							<option value="3">废弃</option>
-						</select>
+						<label for="server-lip" class="col-form-label" for="server-lip">内网地址</label>
+						<input type="text" class="form-control" id="server-lip">
 					</div>
 				</div>
-
 
 				<div class="row justify-content-md-center">
 					<div class="form-group col-auto my-1">
@@ -81,39 +75,61 @@
 					</div>
 				</div>
 
-				<label for="server-cabinet" class="col-form-label" for="server-cabinet">机柜</label>
-				<input type="text" class="form-control" id="server-cabinet">
-
-				<label for="server-lip" class="col-form-label" for="server-lip">内网地址</label>
-				<input type="text" class="form-control" id="server-lip">
+				<div class="form-group" style="width: 50%;">
+					<label for="server-state" class="col-form-label" for="server-state">运行状态</label>
+					<select class="custom-select" id="server-state">
+						<option selected>请选择</option>
+						<option value="1">在线</option>
+						<option value="2">空闲</option>
+						<option value="3">废弃</option>
+					</select>
+				</div>
 
 				<label for="server-os" class="col-form-label" for="server-os">操作系统</label>
-				<input type="text" class="form-control" id="server-os">
+				<input type="text" class="form-control" id="server-os" style="width: 50%;">
+
+				<label for="server-memory" class="col-form-label" for="server-memory">内存</label>
+				<input type="text" class="form-control" id="server-memory" style="width: 50%;">
 
 				<label for="server-cpu" class="col-form-label" for="server-cpu">CPU</label>
 				<input type="text" class="form-control" id="server-cpu">
 
-				<label for="server-memory" class="col-form-label" for="server-memory">内存</label>
-				<input type="text" class="form-control" id="server-memory">
+				<label for="server-cabinet" class="col-form-label" for="server-cabinet">机柜</label>
+				<input type="text" class="form-control" id="server-cabinet">
 
+				<label for="server-work" class="col-form-label" for="server-work">功能</label>
+				<input type="text" class="form-control" id="server-work" placeholder="例如:web服务器,中英文逗号隔开">
 
-				<label for="server-work" class="col-form-label" for="server-work">服务器功能</label>
-				<input type="text" class="form-control" id="server-work">
+				<div class="form-group">
+					<label for="server-project" class="col-form-label" for="server-project">已部署项目</label>
+					<div class="input-group">
+						<select class="custom-select" id="validatedInputGroupSelect">
+							<option value="">请输入并搜索项目</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button">添加项目</button>
+						</div>
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button">新建项目</button>
+						</div>
+						
+					</div>
+				</div>
 
-				<label for="server-project" class="col-form-label" for="server-project">项目</label>
-				<input type="text" class="form-control" id="server-project">
-
-				<label for="message-text" class="col-form-label" for="server-describtion">描述</label>
+				<label for="server-text" class="col-form-label" for="server-describtion">描述</label>
 				<textarea class="form-control" id="server-describtion"></textarea>
 
-				</div>
 			</div>
+			
 			<div v-show="project_show">
 				<h4>项目</h4>
 				<div class="form-group">
 				<label for="project-pcname" class="col-form-label" for="project-pcname">项目名</label>
 				<input type="text" class="form-control" id="project-pcname">
-				<label for="message-text" class="col-form-label" for="project-describtion">描述</label>
+				<label for="project-text" class="col-form-label" for="project-describtion">描述</label>
 				<textarea class="form-control" id="project-describtion"></textarea>
 				</div>
 			</div>
